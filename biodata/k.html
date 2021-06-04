@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+
+<!-- jsPDF library -->
+<script src="js/jsPDF/dist/jspdf.min.js"></script>
+<script>
+  function generatePDF();{
+  var doc =new jspdf();
+  doc.text(20,20 'hello world');
+  doc.text(20,30 'this is client-side Javascript to generate a PDF');
+  // save the PDF
+  doc.save('document.PDF');
+}
+
+
+  </script>
+
+  <body>
+    <button onclick="generatePDF();">Click to Generate a PDF</button>
+
+  </body>
+</html>
